@@ -40,7 +40,7 @@ Contributions are welcome! Please submit a pull request if you would like to con
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the KFUPM License 
 
 ## Author
 
