@@ -33,3 +33,15 @@ The Club Management System has the following features:
 
 To use the Club Management System, clone the repository and install the dependencies:
 
+
+## Contributing
+
+Contributions are welcome! Please submit a pull request if you would like to contribute.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Author
+
+The Club Management System was developed by the Legends team. For any questions or comments, please contact.
