@@ -2,7 +2,7 @@
 .event-list .event-item {
     padding: 1rem 1.9rem;
     margin: 0 0.9375rem 1.875rem 0.9375rem;
-    background-color: #6c7293;
+    background-color: #011cb674;
     border-radius: 8px;
     box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
     -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
@@ -15,7 +15,7 @@
 }
 
 .event-list .event-item .event-schedule {
-    color: #3c4142;
+    color: #adc5c9;
     margin-bottom: 0.625rem;
 }
 
@@ -51,7 +51,7 @@
     display: block;
     margin-bottom: 0.625rem;
     font-weight: 300;
-    color: #3c4142;
+    color: #68cbd7;
 }
 
 .event-list .event-item .event-title:hover {
@@ -154,3 +154,4 @@
     margin: 20px 10px 10px 10px;
     
 }
+
