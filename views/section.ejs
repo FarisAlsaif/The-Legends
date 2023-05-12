@@ -165,9 +165,14 @@
             <!-- Section Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
+                    <% if (sections.length > 0 ){ %>
+                        <% sections.forEach(s => { %>
                     <div class="col-sm-12 col-xl-6">
+                        
                         <div class="bg-secondary rounded h-100 p-4">
-                            <h6 class="mb-4">Section 1</h6>
+                            
+                                <h6 class="mb-4"><%= s.nameOFSection %></h6>
+                              
                             <nav>
                                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                                     <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
@@ -180,14 +185,17 @@
                             </nav>
                             <div class="tab-content pt-3" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                    Diam sea sanctus amet clita lorem sit sanctus ea elitr. Lorem rebum est elitr eos. Dolores aliquyam sadipscing dolor sadipscing accusam voluptua tempor. Sanctus elitr sanctus diam tempor diam aliquyam et labore clita, ipsum takimata amet est erat, accusam takimata gubergren sea sanctus duo nonumy. Ipsum diam ipsum sit kasd.
+                                    
+                                            
+                                        
+                                    <%= s.goalOFSection %>
                                 </div>
+                                
                                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                                     <div class="bg-secondary rounded h-100 p-4">
                                         <table class="table table-bordered">
                                             <thead>
                                                 <tr>
-                                                    <th scope="col">#</th>
                                                     <th scope="col">First Name</th>
                                                     <th scope="col">Last Name</th>
                                                     <th scope="col">Email</th>
@@ -195,22 +203,28 @@
                                             </thead>
                                             <tbody>
                                                 <tr>
-                                                    <th scope="row">1</th>
                                                     <td>Abdullah</td>
                                                     <td>Blaqasim</td>
                                                     <td>Abdullah@email.com</td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">2</th>
                                                     <td>Faris</td>
                                                     <td>ALghamdi</td>
                                                     <td>FarisALghamdi@email.com</td>
                                                 </tr>
+
+                                                
+                                                        <tr>
+                                                            <td><%= %></td>
+                                                            <td><%= %></td>
+                                                            <td><%= %></td>
+                                                        </tr> 
+                                                    
                                             </tbody>
                                         </table>
 
                                         <div class="bg-secondary rounded h-100 p-4">
-                                            <h6 class="mb-4">Creat section</h6>
+                                            <h6 class="mb-4">Add member</h6>
                 
                                             <div class="form-floating mb-3">
                                                 <input type="text" class="form-control" id="name" placeholder="First name">
@@ -232,8 +246,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                     </div> 
+                        <% }) %>
+                    <% } %>
 
                     <div class="col-sm-12 col-xl-6">
                         <div class="bg-secondary rounded h-100 p-4">
@@ -241,14 +257,14 @@
 
                             <div class="form-floating mb-3">
                               
-                                <input type="name" class="form-control" id="name" placeholder="name@example.com">
+                                <input type="name" class="form-control" id="nameOfTheSection" placeholder="name@example.com">
                                     <label for="name">name</label>
                             </div>
 
                             <div class="form-floating">
                                 <textarea class="form-control" placeholder="Leave a comment here"
-                                 id="Goal" style="height: 150px;"></textarea>
-                                <label for="Goal">Goal</label>
+                                 id="goalOfTheSection" style="height: 150px;"></textarea>
+                                <label for="text">Goal</label>
                             </div>
 
                             <button class="btn btn-outline-primary w-100 m-2" type="button">Save</button>
